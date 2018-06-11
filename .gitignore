@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -22,3 +23,11 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+=======
+
+
+*.css linguist-language=java
+*.less linguist-language=java
+*.js linguist-language=java
+*.html linguist-language=java
+>>>>>>> parent of 6e09b5a... 提交gitifnore文件，设定语言为java
