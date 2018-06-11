@@ -1,6 +1,11 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
+*.css linguist-language=java
+*.less linguist-language=java
+*.js linguist-language=java
+*.html linguist-language=java
+
 ### STS ###
 .apt_generated
 .classpath
