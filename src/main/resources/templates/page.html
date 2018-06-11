@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<nav>
+    <ul class="pagination pagination-lg" >
+        <li th:class="${start==1}?'disabled' : ''"><a href="#">上一页</a></li>
+        <li th:if="${start-3 >=1}" ><a th:href="@{'list?page=' + ${start-3}}" th:text="${start -3}" >1</a></li>
+        <li th:if="${start-2 >=1}" ><a th:href="@{'list.html?page=' + ${start-2}}" th:text="${start -2}" >1</a></li>
+        <li th:if="${start-1 >=1}" ><a th:href="@{'list.html?page=' + ${start-1}}" th:text="${start -1}" >1</a></li>
+        <li class="active"><a href="#" th:text="${start}" >1</a></li>
+        <li th:if="${start+1 <=totalPage}" ><a th:href="@{'list?page=' + ${start+1}}" th:text="${start +1}" >1</a></li>
+        <li th:if="${start+2 <=totalPage}" ><a th:href="@{'list?page=' + ${start+2}}" th:text="${start +2}" >1</a></li>
+        <li th:if="${start+3 <=totalPage}" ><a th:href="@{'list?page=' + ${start+3}}" th:text="${start +3}" >1</a></li>
+
+        <li th:class="${start==totalPage}?'disabled' : ''" ><a href="#">下一页</a></li>
+    </ul>
+    <br>
+</nav>
+</body>
+</html>
