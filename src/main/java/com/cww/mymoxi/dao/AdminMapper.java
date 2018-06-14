@@ -3,11 +3,8 @@ package com.cww.mymoxi.dao;
 import com.cww.mymoxi.model.Admin;
 import com.cww.mymoxi.model.AdminExample;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-@Mapper
 public interface AdminMapper {
     long countByExample(AdminExample example);
 
@@ -30,6 +27,4 @@ public interface AdminMapper {
     int updateByPrimaryKeySelective(Admin record);
 
     int updateByPrimaryKey(Admin record);
-
-
 }

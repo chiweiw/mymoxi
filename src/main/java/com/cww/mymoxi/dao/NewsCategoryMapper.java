@@ -3,10 +3,8 @@ package com.cww.mymoxi.dao;
 import com.cww.mymoxi.model.NewsCategory;
 import com.cww.mymoxi.model.NewsCategoryExample;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-@Mapper
+
 public interface NewsCategoryMapper {
     long countByExample(NewsCategoryExample example);
 

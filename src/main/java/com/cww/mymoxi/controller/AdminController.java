@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("")
 public class AdminController {
 
     @Autowired
@@ -25,7 +25,7 @@ public class AdminController {
 
     @GetMapping("/login")
     public String loginGet() {
-        return ("login");
+        return "login";
     }
 
 
