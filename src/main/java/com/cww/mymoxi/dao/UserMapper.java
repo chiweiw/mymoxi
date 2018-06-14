@@ -3,10 +3,8 @@ package com.cww.mymoxi.dao;
 import com.cww.mymoxi.model.User;
 import com.cww.mymoxi.model.UserExample;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-@Mapper
+
 public interface UserMapper {
     long countByExample(UserExample example);
 

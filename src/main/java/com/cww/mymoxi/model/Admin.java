@@ -102,36 +102,4 @@ public class Admin {
     public void setState(Integer state) {
         this.state = state;
     }
-
-    public Admin() {
-    }
-
-    public Admin(Integer id, String username, String password, String realname, Integer age, String phonenumber, String headpicture, Date adddate, Date updatedate, Integer state) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.realname = realname;
-        this.age = age;
-        this.phonenumber = phonenumber;
-        this.headpicture = headpicture;
-        this.adddate = adddate;
-        this.updatedate = updatedate;
-        this.state = state;
-    }
-
-    @Override
-    public String toString() {
-        return "Admin{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", realname='" + realname + '\'' +
-                ", age=" + age +
-                ", phonenumber='" + phonenumber + '\'' +
-                ", headpicture='" + headpicture + '\'' +
-                ", adddate=" + adddate +
-                ", updatedate=" + updatedate +
-                ", state=" + state +
-                '}';
-    }
 }
