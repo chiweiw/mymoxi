@@ -1,6 +1,8 @@
 #mymoxi
 
-###该项目来源于github上的 [moxi](https://github.com/daleiwang/moxi#moxi)我把该项目采用我的想法重写了一遍。
+###该项目来源于github上的 [moxi](https://github.com/daleiwang/moxi#moxi)我把该项目采用我的想法重写了一遍，并添加了一些功能
+
+这是一个简单的demo。我在分支的版本中中添加了权限管理。
 
 ##项目具体介绍
 - 前端采用[thymeleaf](https://www.thymeleaf.org/)
@@ -10,6 +12,8 @@
 - 采用 Swagger根据接口自动生成文档 
 
 - 因为时间关系，并没有全部使用ajax模式交互，仅在部分场景使用了aiax
+
+
 
   ### sql语句
 
